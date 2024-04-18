@@ -7,16 +7,15 @@ import ProtectedRoute from "./protectedroute.jsx";
 import RegisterProducts from './Pages/RegisterProducts';
 import RegisterProvedor from './Pages/RegisterProvedor';
 import MostrarProductosPage from './Pages/VerProductos.jsx';
-import InicioPage from './Pages/InicioPage.jsx';
 function App() {
   return (
    <AuthProvider>
      <BrowserRouter>
       <Routes>
-        <Route path='/' element={<InicioPage/>}></Route>
+
         <Route path='/inicio' element={<h1>Page 2</h1>}></Route>
         <Route path='/Registrar' element={<RegisterPage/>}></Route>
-        <Route path='/Login' element={<LoginPage/>}></Route>
+        <Route path='/' element={<LoginPage/>}></Route>
         <Route path='/ActualizarProducto' element={<h1>Actualizar Producto</h1>}></Route>
         <Route path='/VerProductos/:id' element={<h1>VerProductos Por ID</h1>}></Route>
         {/* Ruta para Registrar provedores */}

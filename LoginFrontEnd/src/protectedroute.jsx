@@ -6,7 +6,7 @@ export const ProtectedRoute = () => {
   console.log(loading, isAuthenticated)  
   
   if (loading) return <h1>Loading...</h1>;
-  if (!isAuthenticated && !loading) return <Navigate to="/login" replace />;
+  if (!isAuthenticated && !loading) return <Navigate to="/" replace />;
   return <Outlet />;
 };
 
